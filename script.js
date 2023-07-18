@@ -8,8 +8,6 @@ for( const value of touristSpots){
   newArr.push(value.replace(/The |An | a | an | the/gi, ""))
 }
 newArr.sort()
-console.log(newArr)
-
 for (let lists in newArr) {
          var li = document.createElement('li');
          li.innerText = newArr[lists];
